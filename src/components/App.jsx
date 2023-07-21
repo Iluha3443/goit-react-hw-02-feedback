@@ -9,5 +9,3 @@ export const App = () => {
     </>
   );
 };
-{/* <Statistics good={Feedback.good} neutral={Feedback.neutral} bad={Feedback.bad}
-  total={Feedback.countTotalFeedback} positivePercentage={Feedback.countPositiveFeedbackPercentage} /> */}
