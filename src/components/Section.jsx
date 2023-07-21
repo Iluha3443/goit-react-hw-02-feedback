@@ -1,7 +1,7 @@
-import css from './Section.module.css'
+import css from './Section.module.css';
 import React from 'react';
 
-export const Section = ({ title, children}) => {
+export const Section = ({ title, children }) => {
     
     return (
         <section>
@@ -10,4 +10,4 @@ export const Section = ({ title, children}) => {
         </section>
         
     )
-}
+};

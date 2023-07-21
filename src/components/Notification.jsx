@@ -1,7 +1,7 @@
-import css from './Notification.module.css'
+import css from './Notification.module.css';
 import React from 'react';
 
-export const Notification = ({message}) => {
+export const Notification = ({ message }) => {
 
     return (
         <>
@@ -9,4 +9,4 @@ export const Notification = ({message}) => {
         </>
         
     )
-}
+};
