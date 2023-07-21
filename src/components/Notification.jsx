@@ -1,4 +1,5 @@
 import css from './Notification.module.css'
+import React from 'react';
 
 export const Notification = ({message}) => {
 
