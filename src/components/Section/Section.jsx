@@ -1,5 +1,6 @@
 import css from './Section.module.css';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Section = ({ title, children }) => {
     
@@ -11,3 +12,8 @@ export const Section = ({ title, children }) => {
         
     )
 };
+
+Section.propTypes = {
+    title: PropTypes.string,
+    children: PropTypes.object
+}

@@ -1,5 +1,6 @@
 import css from './Notification.module.css';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Notification = ({ message }) => {
 
@@ -10,3 +11,7 @@ export const Notification = ({ message }) => {
         
     )
 };
+
+Notification.propTypes = {
+    message: PropTypes.string
+}
