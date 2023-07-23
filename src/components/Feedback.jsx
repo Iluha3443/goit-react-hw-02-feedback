@@ -14,24 +14,27 @@ class Feedback extends React.Component {
     };
 
      handleClick = (elem) => {
-    switch (elem) {
-      case 'good':
-        this.setState(prevState => ({
-          good: prevState.good + 1
-        }));
-        break;
-      case 'neutral':
-        this.setState(prevState => ({
-          neutral: prevState.neutral + 1
-        }));
-        break;
-      case 'bad':
-        this.setState(prevState => ({
-          bad: prevState.bad + 1
-        }));
-        break;
-    }
+  switch (elem) {
+    case 'good':
+      this.setState(prevState => ({
+        good: prevState.good + 1
+      }));
+      break;
+    case 'neutral':
+      this.setState(prevState => ({
+        neutral: prevState.neutral + 1
+      }));
+      break;
+    case 'bad':
+      this.setState(prevState => ({
+        bad: prevState.bad + 1
+      }));
+      break;
+    default:
+      console.error(`Invalid value: ${elem}. Only 'good', 'neutral', or 'bad' are allowed.`);
+      break;
   }
+}
 
     countTotalFeedback = () => {
         const { good, neutral, bad } = this.state;
